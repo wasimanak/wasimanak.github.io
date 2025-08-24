@@ -922,6 +922,18 @@ Let build the future, one structure at a time.
 
 
 <script>
+	function toggleText() {
+    const text = document.getElementById("aboutText");
+    const btn = document.getElementById("toggleBtn");
+
+    if (text.classList.contains("truncate")) {
+        text.classList.remove("truncate");
+        btn.innerText = "See Less";
+    } else {
+        text.classList.add("truncate");
+        btn.innerText = "See More";
+    }
+}
     var spinner = function (show) {
         if (show) {
             $('#spinner').addClass('show'); // Show spinner
@@ -989,6 +1001,7 @@ Let build the future, one structure at a time.
 </body>
 
 </html>
+
 
 
 
