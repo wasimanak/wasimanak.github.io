@@ -24,6 +24,16 @@
     height: 100% !important;
   }
 }
+.truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Show only 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.6em;
+    max-height: 4.8em; /* 3 lines * line-height */
+}
+
 
 .fw-semi-bold {
   font-weight: 600;
