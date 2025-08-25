@@ -2,15 +2,17 @@
 <html lang="en">
 
 <head>
-    <met#aeb3b8et="utf-8">
+<meta charset="utf-8">
         <title>Waseem Shahzad Civil Engineer</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Civil Engineer" name="keywords">
         <meta content="Quantity Surveyor" name="description">
 
         <!-- Favicon -->
-        <link href="img/Profile.jpg" rel="icon">
-<link type="image/png" sizes="120x120" rel="icon" href=".../icons8-w-cool-120.png">
+  <link rel="icon" href="img/images.ico" type="image/x-icon">
+<link rel="shortcut icon" href="img/images.ico" type="image/x-icon">
+
+
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -103,19 +105,33 @@
                 <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
                     <h1 class="title pb-3 mb-5">About Me</h1>
                 
-					 <p id="aboutText" class="truncate">
-        I'm Waseem Shahzad, a passionate Civil Engineer with a solid track record of planning, and executing infrastructure and structural projects with precision and efficiency. With several years of hands-on experience in both site supervision and project management, I've contributed to successful completions of residential, commercial, and infrastructure developments across diverse environments.
+				<p id="aboutText">
+    <span id="visibleText">
+        I'm Waseem Shahzad, a passionate Civil Engineer with a solid track record of planning,
+        and executing infrastructure and structural projects with precision and efficiency. With several years of hands-on experience in both site supervision and project management,
+        I've contributed to successful completions of residential, commercial, and infrastructure
+        developments across diverse environments.  My expertise
+    </span>
+    <span id="dots">... <span class="toggle-link" onclick="toggleText()">See More</span></span>
+    <span id="hiddenText" style="display:none;">
+       
 
-        My expertise spans structural analysis, project planning, BOQ estimation, AutoCAD detailing, and quality assurance/control, ensuring each project aligns with engineering standards and client expectations. Whether it's pile foundations, beam-girder systems, or multi-span bridge construction I'm driven by the challenge of translating engineering concepts into real-world impact.
+        spans structural analysis, project planning, BOQ estimation, AutoCAD detailing,
+        and quality assurance/control, ensuring each project aligns with engineering standards and
+        client expectations. Whether it's pile foundations, beam-girder systems, or multi-span bridge
+        construction I'm driven by the challenge of translating engineering concepts into real-world impact.
 
-        I specialize in coordinating with architects, contractors, and government bodies, ensuring projects are delivered safely, on time, and within budget. I thrive in collaborative environments where my problem-solving mindset and attention to detail directly influence project success.
+        I specialize in coordinating with architects, contractors, and government bodies, ensuring
+        projects are delivered safely, on time, and within budget. I thrive in collaborative environments
+        where my problem-solving mindset and attention to detail directly influence project success.
 
-        From preparing site execution plans to managing daily progress reports, handling civil drawings, or conducting technical evaluations I'm equally at home on construction sites and in the planning room.
+        From preparing site execution plans to managing daily progress reports, handling civil drawings,
+        or conducting technical evaluations I'm equally at home on construction sites and in the planning room.
 
         Let's build the future, one structure at a time.
-						  <button id="toggleBtn"onclick="toggleText()">See More</button>
-    </p>
-   
+        <span class="toggle-link" onclick="toggleText()"> See Less</span>
+    </span>
+</p>
                     <div class="row mb-4">
                         <div class="col-sm-6 py-1">
                             <span class="fw-medium text-primary">Name:</span> Waseem Shahzad
@@ -220,17 +236,20 @@
                                 style="top: -5px; left: -50px;"></span>
                             <h5 class="mb-1">Site Engineer</h5>
                             <p class="mb-2"><b>Laralek Ultimate Limited</b> | <small>April 2024 - Present</small></p>
-                            	 <p id="aboutText" class="truncate">
+                            	<p >
 									 Works on Piles and Bridges in Lagos    I'm Waseem Shahzad, a passionate Civil Engineer with a solid track record of planning, and executing infrastructure and structural projects with precision and efficiency. With several years of hands-on experience in both site supervision and project management, I've contributed to successful completions of residential, commercial, and infrastructure developments across diverse environments.
 
-        My expertise spans structural analysis, project planning, BOQ estimation, AutoCAD detailing, and quality assurance/control, ensuring each project aligns with engineering standards and client expectations. Whether it's pile foundations, beam-girder systems, or multi-span bridge construction I'm driven by the challenge of translating engineering concepts into real-world impact.
+        My expertise 
+       
+        spans structural analysis, project planning, BOQ estimation, AutoCAD detailing, and quality assurance/control, ensuring each project aligns with engineering standards and client expectations. Whether it's pile foundations, beam-girder systems, or multi-span bridge construction I'm driven by the challenge of translating engineering concepts into real-world impact.
 
         I specialize in coordinating with architects, contractors, and government bodies, ensuring projects are delivered safely, on time, and within budget. I thrive in collaborative environments where my problem-solving mindset and attention to detail directly influence project success.
 
         From preparing site execution plans to managing daily progress reports, handling civil drawings, or conducting technical evaluations I'm equally at home on construction sites and in the planning room.
 
-        Let's build the future, one structure at a time </p>
-							  <button id="toggleBtn" onclick="toggleText()">See More</button>
+        Let's build the future, one structure at a time
+    </p>
+
 				 <!--  Slider start  -->
                             <div id="flipCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
@@ -247,13 +266,13 @@
                                 <!--  Slides  -->
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="img/Project10-1.jpg" class="d-block w-100" alt="...">
+                                        <img src="img/Project10-1.jpg" class="d-block w-100" style="height: 600px" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="img/Project10-2.jpg" class="d-block w-100" alt="...">
+                                        <img src="img/Project10-2.jpg" class="d-block w-100" style="height: 600px" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="img/Project10-3.jpg" class="d-block w-100" alt="...">
+                                        <img src="img/Project10-3.jpg" class="d-block w-100" style="height: 600px" alt="...">
                                     </div>
                                 </div>
 
@@ -924,17 +943,20 @@
 
 
 <script>
-	function toggleText() {
-    const text = document.getElementById("aboutText");
-    const btn = document.getElementById("toggleBtn");
+function toggleText() {
+    const dots = document.getElementById("dots");
+    const hiddenText = document.getElementById("hiddenText");
+    const dotss = document.getElementById("dotss");
 
-    if (text.classList.contains("truncate")) {
-        text.classList.remove("truncate");
-        btn.innerText = "See Less";
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        hiddenText.style.display = "none";
     } else {
-        text.classList.add("truncate");
-        btn.innerText = "See More";
+        dots.style.display = "none";
+        hiddenText.style.display = "inline";
     }
+    
 }
     var spinner = function (show) {
         if (show) {
